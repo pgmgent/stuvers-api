@@ -1,0 +1,24 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Santa {
+  id: Int!
+  className: String!
+  name: String!
+  email: String!
+}
+
+type Query {
+  santas: [Santa!]!
+}
+
+type Mutation {
+  createSanta(createSantaInput: CreateSantaInput!): Santa!
+}
+
+input CreateSantaInput {
+  className: String!
+  name: String!
+  email: String!
+}
